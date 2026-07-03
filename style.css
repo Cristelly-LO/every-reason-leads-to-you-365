@@ -1,70 +1,92 @@
-/* Google Font */
+/* ===========================
+EVERY REASON LEADS TO YOU
+Version 3.0
+=========================== */
+
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap');
 
-/* Reset */
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 font-family:'Poppins',sans-serif;
+background:#111;
 color:white;
-overflow:hidden;
 }
 
-/* HERO */
+/* ===========================
+HOMEPAGE
+=========================== */
+
 .hero{
+
 position:relative;
+
 width:100%;
+
 height:100vh;
 
-background-image:url("cover.jpg");
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
+background:url("cover.jpg") center center/cover no-repeat;
 
 display:flex;
+
 justify-content:center;
+
 align-items:center;
+
+overflow:hidden;
+
 }
 
-/* Dark Romantic Overlay */
+/* Romantic Overlay */
+
 .overlay{
+
 position:absolute;
+
 inset:0;
 
 background:linear-gradient(
-rgba(20,20,20,.45),
-rgba(20,20,20,.65)
+rgba(15,15,15,.45),
+rgba(15,15,15,.72)
 );
+
+backdrop-filter:blur(2px);
+
 }
 
-/* Content */
-.content{
+/* Hero Content */
+
+.hero-content{
 
 position:relative;
 
 z-index:2;
 
-text-align:center;
-
 width:90%;
 
-max-width:700px;
+max-width:750px;
 
-animation:fadeIn 2s ease;
+text-align:center;
+
+animation:fadeUp 2s ease;
 
 }
 
-.intro{
+.small-text{
 
 letter-spacing:4px;
 
 text-transform:uppercase;
 
-font-size:.85rem;
+font-size:.9rem;
 
 opacity:.9;
 
@@ -72,107 +94,326 @@ opacity:.9;
 
 h1{
 
-margin-top:20px;
-
 font-family:'Great Vibes',cursive;
 
-font-size:5rem;
+font-size:6rem;
 
-line-height:1.1;
+line-height:1;
 
-color:#ffffff;
+margin-top:20px;
+
+margin-bottom:20px;
+
+color:white;
 
 }
 
-h2{
+.subtitle{
 
-margin-top:18px;
+font-size:1.3rem;
 
 font-weight:300;
 
-font-size:1.5rem;
+opacity:.95;
 
 }
 
-.divider{
+.line{
 
-width:80px;
+width:90px;
 
 height:2px;
 
-background:#F6C5D8;
+background:#F3B4CD;
 
-margin:30px auto;
+margin:35px auto;
 
 }
 
-.description{
+.message{
 
 line-height:2;
 
-font-size:1.1rem;
+font-size:1.15rem;
+
+max-width:500px;
+
+margin:auto;
 
 }
 
-.description span{
+.main-button{
 
-color:#FFD7E8;
+margin-top:45px;
 
-font-weight:600;
+background:#EBA7C6;
+
+color:white;
+
+border:none;
+
+padding:18px 45px;
+
+border-radius:999px;
+
+cursor:pointer;
+
+font-size:1rem;
+
+transition:.35s;
+
+}
+
+.main-button:hover{
+
+transform:translateY(-4px);
+
+background:#d986ac;
+
+box-shadow:0 15px 40px rgba(235,167,198,.35);
+
+}
+
+.signature{
+
+margin-top:45px;
+
+opacity:.8;
+
+font-size:.95rem;
+
+}
+
+/* ===========================
+LETTER PAGE
+=========================== */
+
+.letter-page{
+
+background:#fdf8f5;
+
+color:#4a3d43;
+
+padding:80px 20px;
+
+}
+
+.letter-background{
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.letter-card{
+
+background:white;
+
+width:90%;
+
+max-width:850px;
+
+padding:60px;
+
+border-radius:30px;
+
+box-shadow:0 20px 60px rgba(0,0,0,.08);
+
+}
+
+.chapter{
+
+text-align:center;
+
+letter-spacing:4px;
+
+color:#B8879F;
+
+margin-bottom:10px;
+
+}
+
+.letter-card h1{
+
+color:#C86E94;
+
+font-size:4rem;
+
+text-align:center;
+
+}
+
+.letter-content{
+
+margin-top:35px;
+
+line-height:2.2;
+
+font-size:1.05rem;
+
+}
+
+.love-quote,
+.distance-quote{
+
+font-family:'Great Vibes',cursive;
+
+text-align:center;
+
+color:#D07A9F;
+
+font-size:2.4rem;
+
+line-height:1.5;
+
+margin:40px 0;
+
+}
+
+.ending{
+
+text-align:center;
+
+font-family:'Great Vibes',cursive;
+
+color:#C86E94;
+
+font-size:2.8rem;
 
 }
 
 .start-button{
 
-margin-top:40px;
+display:block;
 
-padding:18px 42px;
+margin:50px auto 0;
 
-border:none;
-
-border-radius:50px;
-
-background:#F39ABB;
+background:#EBA7C6;
 
 color:white;
 
-font-size:1rem;
+border:none;
+
+padding:16px 42px;
+
+border-radius:999px;
 
 cursor:pointer;
 
-transition:.3s;
+transition:.35s;
+
+font-size:1rem;
 
 }
 
 .start-button:hover{
 
-transform:translateY(-3px);
+transform:translateY(-4px);
 
-background:#E87AA5;
-
-box-shadow:0 10px 30px rgba(232,122,165,.45);
+background:#d986ac;
 
 }
 
-.footer{
+.signature{
 
-margin-top:45px;
+text-align:right;
 
-font-size:.95rem;
+margin-top:40px;
+
+}
+
+/* ===========================
+SONG PAGE
+=========================== */
+
+.song-page{
+
+background:#151515;
+
+color:white;
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:50px 20px;
+
+}
+
+.song-wrapper{
+
+width:90%;
+
+max-width:700px;
+
+text-align:center;
+
+}
+
+.song-intro{
+
+line-height:2;
+
+margin:40px 0;
+
+}
+
+.album-card{
+
+margin:40px auto;
+
+padding:40px;
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:25px;
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(12px);
+
+}
+
+.album-card h2{
+
+font-size:3rem;
+
+margin-bottom:10px;
+
+}
+
+.album-card h3{
+
+font-weight:300;
+
+margin-bottom:20px;
+
+}
+
+.continue-message{
+
+margin:35px 0;
 
 opacity:.85;
 
 }
 
-/* Animation */
+/* ===========================
+ANIMATION
+=========================== */
 
-@keyframes fadeIn{
+@keyframes fadeUp{
 
 from{
 
 opacity:0;
 
-transform:translateY(20px);
+transform:translateY(30px);
 
 }
 
@@ -186,24 +427,38 @@ transform:translateY(0);
 
 }
 
-/* Mobile */
+/* ===========================
+MOBILE
+=========================== */
 
 @media(max-width:768px){
 
 h1{
 
-font-size:3.4rem;
+font-size:3.8rem;
 
 }
 
-.description{
+.letter-card{
 
-font-size:1rem;
-
-line-height:1.8;
+padding:35px;
 
 }
 
+.letter-card h1{
+
+font-size:2.8rem;
+
+}
+
+.love-quote,
+.distance-quote{
+
+font-size:2rem;
+
+}
+
+.main-button,
 .start-button{
 
 width:100%;
