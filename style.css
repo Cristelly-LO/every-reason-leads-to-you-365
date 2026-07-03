@@ -1,9 +1,9 @@
-/* ===========================
+/* =====================================================
 EVERY REASON LEADS TO YOU
-Version 3.0
-=========================== */
+Version 4.0
+===================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap');
 
 *{
 margin:0;
@@ -16,322 +16,42 @@ scroll-behavior:smooth;
 }
 
 body{
+
 font-family:'Poppins',sans-serif;
-background:#111;
-color:white;
+
+background:linear-gradient(135deg,#fff8fb,#ffeef5);
+
+color:#444;
+
+overflow-x:hidden;
+
+animation:fadeIn .8s ease;
+
 }
 
-/* ===========================
-HOMEPAGE
-=========================== */
+/* ==========================
+Fade Animation
+========================== */
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ==========================
+HOME PAGE
+========================== */
 
 .hero{
-
-position:relative;
-
-width:100%;
-
-height:100vh;
-
-background:url("cover.jpg") center center/cover no-repeat;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-overflow:hidden;
-
-}
-
-/* Romantic Overlay */
-
-.overlay{
-
-position:absolute;
-
-inset:0;
-
-background:linear-gradient(
-rgba(15,15,15,.45),
-rgba(15,15,15,.72)
-);
-
-backdrop-filter:blur(2px);
-
-}
-
-/* Hero Content */
-
-.hero-content{
-
-position:relative;
-
-z-index:2;
-
-width:90%;
-
-max-width:750px;
-
-text-align:center;
-
-animation:fadeUp 2s ease;
-
-}
-
-.small-text{
-
-letter-spacing:4px;
-
-text-transform:uppercase;
-
-font-size:.9rem;
-
-opacity:.9;
-
-}
-
-h1{
-
-font-family:'Great Vibes',cursive;
-
-font-size:6rem;
-
-line-height:1;
-
-margin-top:20px;
-
-margin-bottom:20px;
-
-color:white;
-
-}
-
-.subtitle{
-
-font-size:1.3rem;
-
-font-weight:300;
-
-opacity:.95;
-
-}
-
-.line{
-
-width:90px;
-
-height:2px;
-
-background:#F3B4CD;
-
-margin:35px auto;
-
-}
-
-.message{
-
-line-height:2;
-
-font-size:1.15rem;
-
-max-width:500px;
-
-margin:auto;
-
-}
-
-.main-button{
-
-margin-top:45px;
-
-background:#EBA7C6;
-
-color:white;
-
-border:none;
-
-padding:18px 45px;
-
-border-radius:999px;
-
-cursor:pointer;
-
-font-size:1rem;
-
-transition:.35s;
-
-}
-
-.main-button:hover{
-
-transform:translateY(-4px);
-
-background:#d986ac;
-
-box-shadow:0 15px 40px rgba(235,167,198,.35);
-
-}
-
-.signature{
-
-margin-top:45px;
-
-opacity:.8;
-
-font-size:.95rem;
-
-}
-
-/* ===========================
-LETTER PAGE
-=========================== */
-
-.letter-page{
-
-background:#fdf8f5;
-
-color:#4a3d43;
-
-padding:80px 20px;
-
-}
-
-.letter-background{
-
-display:flex;
-
-justify-content:center;
-
-}
-
-.letter-card{
-
-background:white;
-
-width:90%;
-
-max-width:850px;
-
-padding:60px;
-
-border-radius:30px;
-
-box-shadow:0 20px 60px rgba(0,0,0,.08);
-
-}
-
-.chapter{
-
-text-align:center;
-
-letter-spacing:4px;
-
-color:#B8879F;
-
-margin-bottom:10px;
-
-}
-
-.letter-card h1{
-
-color:#C86E94;
-
-font-size:4rem;
-
-text-align:center;
-
-}
-
-.letter-content{
-
-margin-top:35px;
-
-line-height:2.2;
-
-font-size:1.05rem;
-
-}
-
-.love-quote,
-.distance-quote{
-
-font-family:'Great Vibes',cursive;
-
-text-align:center;
-
-color:#D07A9F;
-
-font-size:2.4rem;
-
-line-height:1.5;
-
-margin:40px 0;
-
-}
-
-.ending{
-
-text-align:center;
-
-font-family:'Great Vibes',cursive;
-
-color:#C86E94;
-
-font-size:2.8rem;
-
-}
-
-.start-button{
-
-display:block;
-
-margin:50px auto 0;
-
-background:#EBA7C6;
-
-color:white;
-
-border:none;
-
-padding:16px 42px;
-
-border-radius:999px;
-
-cursor:pointer;
-
-transition:.35s;
-
-font-size:1rem;
-
-}
-
-.start-button:hover{
-
-transform:translateY(-4px);
-
-background:#d986ac;
-
-}
-
-.signature{
-
-text-align:right;
-
-margin-top:40px;
-
-}
-
-/* ===========================
-SONG PAGE
-=========================== */
-
-.song-page{
-
-background:#151515;
-
-color:white;
 
 min-height:100vh;
 
@@ -341,146 +61,366 @@ justify-content:center;
 
 align-items:center;
 
-padding:50px 20px;
+padding:40px;
 
 }
 
-.song-wrapper{
+.hero-card{
 
-width:90%;
+width:900px;
 
-max-width:700px;
+background:rgba(255,255,255,.72);
+
+backdrop-filter:blur(18px);
+
+border-radius:30px;
+
+padding:50px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.08);
 
 text-align:center;
 
 }
 
-.song-intro{
+.cover{
 
-line-height:2;
+width:230px;
 
-margin:40px 0;
+height:230px;
 
-}
+object-fit:cover;
 
-.album-card{
+border-radius:50%;
 
-margin:40px auto;
+box-shadow:0 15px 30px rgba(0,0,0,.12);
 
-padding:40px;
-
-border:1px solid rgba(255,255,255,.15);
-
-border-radius:25px;
-
-background:rgba(255,255,255,.05);
-
-backdrop-filter:blur(12px);
+margin-bottom:30px;
 
 }
 
-.album-card h2{
+.hero h4{
 
-font-size:3rem;
+letter-spacing:4px;
 
-margin-bottom:10px;
+text-transform:uppercase;
+
+color:#d78ea9;
+
+margin-bottom:15px;
 
 }
 
-.album-card h3{
+.hero h1{
 
-font-weight:300;
+font-size:55px;
 
 margin-bottom:20px;
 
-}
-
-.continue-message{
-
-margin:35px 0;
-
-opacity:.85;
+color:#333;
 
 }
 
-/* ===========================
-ANIMATION
-=========================== */
+.hero p{
 
-@keyframes fadeUp{
+font-size:18px;
 
-from{
+line-height:1.8;
 
-opacity:0;
+margin-bottom:35px;
 
-transform:translateY(30px);
+color:#666;
 
 }
 
-to{
+/* ==========================
+BUTTONS
+========================== */
 
-opacity:1;
+button{
 
-transform:translateY(0);
+font-family:'Poppins';
+
+cursor:pointer;
+
+border:none;
+
+border-radius:999px;
+
+padding:16px 35px;
+
+font-size:17px;
+
+transition:.35s;
 
 }
 
+.start-button,
+.next-btn,
+.reason-btn{
+
+background:#d78ea9;
+
+color:white;
+
 }
 
-/* ===========================
-MOBILE
-=========================== */
+.start-button:hover,
+.next-btn:hover,
+.reason-btn:hover{
 
-@media(max-width:768px){
+transform:translateY(-4px);
 
-h1{
+box-shadow:0 12px 25px rgba(215,142,169,.35);
 
-font-size:3.8rem;
+}
+
+/* ==========================
+LETTER PAGE
+========================== */
+
+.letter-page{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:50px;
 
 }
 
 .letter-card{
 
-padding:35px;
+width:900px;
+
+background:white;
+
+border-radius:30px;
+
+padding:55px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.letter-card h4{
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+
+color:#d78ea9;
+
+margin-bottom:12px;
 
 }
 
 .letter-card h1{
 
-font-size:2.8rem;
+font-family:'Great Vibes',cursive;
+
+font-size:60px;
+
+font-weight:400;
+
+margin-bottom:30px;
+
+color:#444;
 
 }
 
-.love-quote,
-.distance-quote{
+.letter-card p{
 
-font-size:2rem;
+font-size:18px;
+
+line-height:2.1;
+
+text-align:justify;
+
+color:#555;
+
+margin-bottom:40px;
 
 }
 
-.main-button,
-.start-button{
+/* ==========================
+REASONS PAGE
+========================== */
+
+.reasons-page{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:40px;
+
+}
+
+.reason-card{
+
+width:900px;
+
+background:white;
+
+padding:55px;
+
+border-radius:30px;
+
+text-align:center;
+
+box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+.reason-number{
+
+font-size:18px;
+
+color:#d78ea9;
+
+margin-bottom:20px;
+
+letter-spacing:2px;
+
+}
+
+.reason{
+
+font-size:33px;
+
+font-weight:500;
+
+line-height:1.8;
+
+margin:40px 0;
+
+color:#444;
+
+min-height:180px;
+
+transition:.3s;
+
+}
+
+.progress-container{
+
+height:10px;
+
+background:#f1f1f1;
+
+border-radius:50px;
+
+overflow:hidden;
+
+margin:35px 0;
+
+}
+
+.progress{
+
+height:100%;
+
+width:0%;
+
+background:#d78ea9;
+
+transition:.4s;
+
+}
+
+/* ==========================
+NAVIGATION BUTTONS
+========================== */
+
+.button-group{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+margin-top:35px;
+
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+.footer{
+
+margin-top:50px;
+
+text-align:center;
+
+font-size:14px;
+
+color:#999;
+
+}
+
+/* ==========================
+MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.hero-card,
+.letter-card,
+.reason-card{
+
+padding:30px;
 
 width:100%;
 
 }
 
-}
-/* ===========================
-PAGE TRANSITIONS
-=========================== */
+.hero h1{
 
-body{
-
-opacity:0;
-
-transition:opacity .6s ease;
+font-size:40px;
 
 }
 
-body.loaded{
+.letter-card h1{
 
-opacity:1;
+font-size:45px;
 
 }
 
+.reason{
+
+font-size:24px;
+
+}
+
+.cover{
+
+width:180px;
+
+height:180px;
+
+}
+
+button{
+
+width:100%;
+
+}
+
+.button-group{
+
+flex-direction:column;
+
+}
+
+}
