@@ -543,6 +543,62 @@ transform:scale(1.02);
 
 }
 
+/* ===========================
+FINAL TIME CAPSULE
+=========================== */
+
+.time-capsule{
+
+margin-top:80px;
+
+padding:50px;
+
+background:rgba(255,255,255,.75);
+
+backdrop-filter:blur(12px);
+
+border-radius:30px;
+
+box-shadow:0 20px 60px rgba(0,0,0,.08);
+
+max-width:760px;
+
+margin-left:auto;
+
+margin-right:auto;
+
+line-height:2.1;
+
+color:#666;
+
+}
+
+.time-capsule .date{
+
+font-size:30px;
+
+font-weight:600;
+
+color:#d78ea9;
+
+letter-spacing:3px;
+
+}
+
+.welcome-home{
+
+font-family:'Great Vibes',cursive;
+
+font-size:48px;
+
+color:#d78ea9;
+
+display:block;
+
+margin:20px 0;
+
+}
+
 .memory-wrapper .main-button{
 
 margin-top:50px;
