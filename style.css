@@ -85,17 +85,17 @@ text-align:center;
 
 .cover{
 
-width:230px;
+width:250px;
 
-height:230px;
+height:250px;
 
 object-fit:cover;
 
 border-radius:50%;
 
-box-shadow:0 15px 30px rgba(0,0,0,.12);
+box-shadow:0 18px 35px rgba(0,0,0,.18);
 
-margin-bottom:30px;
+margin-bottom:45px;
 
 }
 
