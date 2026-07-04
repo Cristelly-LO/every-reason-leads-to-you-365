@@ -424,3 +424,46 @@ flex-direction:column;
 }
 
 }
+
+/* =========================
+LOADING SCREEN
+========================= */
+
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100vh;
+background:linear-gradient(135deg,#fff0f6,#ffe8f1,#fff7fb);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:99999;
+transition:opacity 1s ease;
+}
+
+.loader-heart{
+font-size:70px;
+animation:heartbeat 1.2s infinite;
+}
+
+#loader h2{
+margin-top:20px;
+font-size:28px;
+color:#d87093;
+}
+
+#loader p{
+color:#777;
+margin-top:12px;
+}
+
+@keyframes heartbeat{
+0%{transform:scale(1);}
+25%{transform:scale(1.15);}
+40%{transform:scale(.95);}
+60%{transform:scale(1.18);}
+100%{transform:scale(1);}
+}
