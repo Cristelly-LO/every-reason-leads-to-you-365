@@ -22,10 +22,11 @@ href &&
 !href.startsWith("#")
 ){
 
-  window.addEventListener("load", function () {
+window.addEventListener("load", function () {
 const loader = document.getElementById("loader");
 
-if (loader) {
+if (!loader) return;
+
 setTimeout(function () {
 loader.style.opacity = "0";
 
@@ -34,5 +35,4 @@ loader.remove();
 }, 1000);
 
 }, 2500);
-}
 });
