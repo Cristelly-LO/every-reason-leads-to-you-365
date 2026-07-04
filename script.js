@@ -21,35 +21,18 @@ href &&
 !href.startsWith("http") &&
 !href.startsWith("#")
 ){
-window.addEventListener("load", () => {
 
-setTimeout(() => {
-
+  window.addEventListener("load", function () {
 const loader = document.getElementById("loader");
 
+if (loader) {
+setTimeout(function () {
 loader.style.opacity = "0";
 
-setTimeout(() => {
+setTimeout(function () {
+loader.remove();
+}, 1000);
 
-loader.style.display = "none";
-
-},1000);
-
-},2500);
-
-});
-e.preventDefault();
-
-document.body.classList.remove("loaded");
-
-setTimeout(() => {
-window.location.href = href;
-}, 600);
-
+}, 2500);
 }
-
-});
-
-});
-
 });
