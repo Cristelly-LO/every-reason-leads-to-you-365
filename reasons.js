@@ -760,7 +760,7 @@ const nextBtn = document.getElementById("nextBtn");
 
 if(current === reasons.length-1){
 
-nextBtn.innerHTML="📸 Continue to Our Memories ❤️";
+nextBtn.innerHTML="🤍 One Last Page...";
 
 }else{
 
@@ -784,7 +784,7 @@ updateReason();
 
 }else{
 
-window.location.href="memories.html";
+window.location.href="final.html";
 
 }
 
