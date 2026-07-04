@@ -26,3 +26,21 @@ window.location.href = href;
 }, 500);
 }
 });
+});
+});
+
+// Loader
+window.addEventListener("load", () => {
+const loader = document.getElementById("loader");
+
+if (!loader) return;
+
+setTimeout(() => {
+loader.style.opacity = "0";
+
+setTimeout(() => {
+loader.remove();
+}, 1000);
+
+}, 2500);
+});
