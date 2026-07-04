@@ -48,7 +48,7 @@ const reasons = [
 
 "I love you because you remind me every day that I'm worthy of love.",
 
-"I love you because you're simply you."
+"I love you because you're simply you.",
 
 "I love you because you always make me feel chosen.",
 
